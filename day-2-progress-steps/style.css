@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --line-border-fill: aquamarine;
+    --line-border-empty: grey;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: lightgrey;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100svh;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+}
+
+.progress-container {
+    display:flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 2rem;
+    max-width: 100%;
+    width: 300px;
+}
+
+/* Progress background */
+.progress-container::before {
+    content: '';
+    background-color: var(--line-border-empty);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: -1;
+    height: 0.4rem;
+    width: 100%;
+}
+
+/* Progress bar */
+.progress {
+    background-color: var(--line-border-fill);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: -1;
+    height: 0.4rem;
+    width: 0;
+    transition: 0.4s ease;
+}
+
+.circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    height: 2rem;
+    aspect-ratio: 1;
+    border: 3px solid var(--line-border-empty);
+    transition: 0.4s ease;
+}
+
+.circle.active {
+    border-color: var(--line-border-fill);
+}
+
+.btn {
+    background-color: var(--line-border-fill);
+    color: white;
+    border: 0;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    padding: 0.3rem 0.8rem;
+    margin: 0.2rem 0.2rem 1rem 0.2rem;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+.btn:disabled {
+    background-color: var(--line-border-empty);
+    cursor: not-allowed;
+}
+
+.btn-reset {
+    background-color: darkgrey;
+}
+
+
+
