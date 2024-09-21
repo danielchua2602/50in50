@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+:root {
+    --btn-hover-color: lightgrey;
+    --hover-width: 65vw;
+    --other-width: 35vw;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100svh;
+    overflow-y: hidden;
+}
+
+h1 {
+    font-size: 4rem;
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+.btn {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translateX(-50%);
+    text-decoration: none;
+    border: solid white 0.2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 15rem;
+    padding: 1.5rem;
+    text-align: center; 
+    color: white;
+}
+
+.container {
+    background-color: darkslategrey;
+    position: relative;
+    height: 100svh;
+    width: 100vw;
+}
+
+.split {
+    position: absolute;
+    width: 50vw;
+    height: 100svh;
+}
+
+.split.left {
+    left: 0;
+    background-image: url('./assets/ps-small.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.split.left::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: hsla(216, 70%, 65%, 0.2);
+}
+
+.split.left .btn:hover{
+    background-color: var(--btn-hover-color);
+    border-color: var(--btn-hover-color);
+}
+
+.hover-left .left {
+    width: var(--hover-width);
+}
+
+.hover-left .right {
+    width: var(--other-width);
+}
+
+.split.right {
+    right: 0;
+    background-image: url('./assets/xbox.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.split.right::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: hsla(138, 70%, 65%, 0.2);
+}
+
+.split.right .btn:hover{
+    background-color: var(--btn-hover-color);
+    border-color: var(--btn-hover-color);
+}
+
+.hover-right .left {
+    width: var(--other-width);
+}
+
+.hover-right .right {
+    width: var(--hover-width);
+}
+
+.split.left, .split.right {
+    transition: all 0.5s ease-in-out;
+}
