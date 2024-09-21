@@ -22,3 +22,6 @@ On hover of left/right container, it expands/shrinks.
 - add/remove css class on hover to dynamically change left/right container width.
 
 **Day 8**
+
+The label moves up when input is in focus.
+- modify the absolute position of label element on focus.
