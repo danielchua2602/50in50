@@ -6,7 +6,7 @@ Started on 14 September 2024;
 
 
 ### Comments
-Some explaination of the animation
+Brief explaination of the animation
 
 **Day 5**
 
@@ -25,3 +25,7 @@ On hover of left/right container, it expands/shrinks.
 
 The label moves up when input is in focus.
 - modify the absolute position of label element on focus.
+
+**Day 9**
+
+Plays audio element when button is clicked.
