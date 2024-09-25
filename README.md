@@ -29,3 +29,11 @@ The label moves up when input is in focus.
 **Day 9**
 
 Plays audio element when button is clicked.
+
+**Day 10**
+
+Use of fetch to get Dad jokes and populate html.
+
+**Day 11**
+
+Use keydown event listener.
