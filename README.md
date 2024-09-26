@@ -6,7 +6,7 @@ Started on 14 September 2024;
 
 
 ### Comments
-Brief explaination of the animation
+Brief explaination of the animation and/or some learnings.
 
 **Day 5**
 
@@ -37,3 +37,7 @@ Use of fetch to get Dad jokes and populate html.
 **Day 11**
 
 Use keydown event listener.
+
+**Day 12**
+
+Overlapping background images in the faq-div container using position absolute and the pseudo class before and after.
