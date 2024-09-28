@@ -46,3 +46,9 @@ Overlapping background images in the faq-div container using position absolute a
 
 The tags created after pressing 'Enter' will be highlighted / unhighlighted randomly. A single tag will be chosen and highlighted eventually.
 - made use of setInterval and setTimeout to animate the tags
+
+**Day 14**
+
+On clicking the icon the nav bar expands / shrinks.
+- On expand, the icon rotates into a 'X', the opacity of the nav titles slowly appears using transition on opacity.
+- On shrink, the icon rotates back into a '=', nav title disappears instantly (no transition).
