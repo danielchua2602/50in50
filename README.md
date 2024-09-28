@@ -41,3 +41,8 @@ Use keydown event listener.
 **Day 12**
 
 Overlapping background images in the faq-div container using position absolute and the pseudo class before and after.
+
+**Day 13**
+
+The tags created after pressing 'Enter' will be highlighted / unhighlighted randomly. A single tag will be chosen and highlighted eventually.
+- made use of setInterval and setTimeout to animate the tags
