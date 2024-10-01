@@ -52,3 +52,8 @@ The tags created after pressing 'Enter' will be highlighted / unhighlighted rand
 On clicking the icon the nav bar expands / shrinks.
 - On expand, the icon rotates into a 'X', the opacity of the nav titles slowly appears using transition on opacity.
 - On shrink, the icon rotates back into a '=', nav title disappears instantly (no transition).
+
+**Day 15**
+
+The number of followers / subscribers is animated and increased.
+- Use Javascript to increment and setTimeout function to slow the increment down for the effect.
